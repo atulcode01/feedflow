@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f0d;
+  --surface: #111815;
+  --card: #171717;
+
+  --text: #ffffff;
+  --text-muted: rgba(255,255,255,0.72);
+  --border: rgba(255,255,255,0.12);
+}
+
+.light {
+  --bg: #ffffff;
+  --surface: #f5f7f6;
+  --card: #ffffff;
+
+  --text: #0b0f0d;
+  --text-muted: rgba(11,15,13,0.72);
+  --border: rgba(11,15,13,0.12);
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
